@@ -1,0 +1,32 @@
+{
+    "w3":{
+        "name":"The Witcher 3 Wild Hunt",
+        "next":"gow",
+        "prev":"doom",
+        "on":"PC"
+    },
+    "gow":{
+        "name":"God Of War",
+        "next":"uc4",
+        "prev":"w3",
+        "on":"PS4"
+    },
+    "uc4":{
+        "name":"Uncharted 4:A Thief's End",
+        "next":"mgsv",
+        "prev":"gow",
+        "on":"PS4"
+    },
+    "mgsv":{
+        "name":"Metal Gear Solid V The Phantom Pain",
+        "next":"doom",
+        "prev":"uc4",
+        "on":"PC"
+    },
+    "doom":{
+        "name":"Doom",
+        "next":"w3",
+        "prev":"mgsv",
+        "on":"PC"
+    }
+}
