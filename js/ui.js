@@ -1,5 +1,5 @@
 class Ui{
-    constructor(rightArrow,leftArrow,gameName,capturedOn,cover,backGround,bottomText,nextPage){
+    constructor(rightArrow,leftArrow,gameName,capturedOn,cover,backGround,bottomText,nextPage,rightMobileNav,leftMobileNav){
 
         this.gameName = gameName;
         this.rightArrow = rightArrow;
@@ -9,6 +9,8 @@ class Ui{
         this.backGround = backGround;
         this.bottomText = bottomText;
         this.nextPage = nextPage;
+        this.rightMobileNav = rightMobileNav;
+        this.leftMobileNav = leftMobileNav;
         this.state = "landing";
         this.game = "w3";
         this.next = "gow";

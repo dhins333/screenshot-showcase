@@ -6,7 +6,9 @@ const cover = document.querySelector("#cover");
 const backGround = document.querySelector("#background")
 const bottomText = document.querySelector("#coverBottomText");
 const nextPage = document.querySelector("#nextPage");
-const ui = new Ui(rightArrow,leftArrow,gameName,capturedOn,cover,backGround,bottomText,nextPage);
+const rightMobileNav = document.querySelector("#rightMobileNavContainer");
+const leftMobileNav = document.querySelector("#leftMobileNavContainer");
+const ui = new Ui(rightArrow,leftArrow,gameName,capturedOn,cover,backGround,bottomText,nextPage,rightMobileNav,leftMobileNav);
 const data = new Data();
 
 loadEventListeners();
@@ -15,6 +17,8 @@ function loadEventListeners(){
     document.addEventListener("DOMContentLoaded",fetchData);
     rightArrow.addEventListener("click",next);
     leftArrow.addEventListener("click",prev);
+    rightMobileNav.addEventListener("click",nextMobile);
+    leftMobileNav.addEventListener("click",prevMobile);
 }
 
 function fetchData(){
@@ -27,6 +31,16 @@ function next(e){
 }
 
 function prev(e){
+    e.preventDefault();
+    ui.changePrev(data);
+}
+
+function nextMobile(e){
+    e.preventDefault();
+    ui.changeNext(data);
+}
+
+function prevMobile(e){
     e.preventDefault();
     ui.changePrev(data);
 }
