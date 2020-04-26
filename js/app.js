@@ -5,7 +5,8 @@ const capturedOn = document.querySelector("#captured");
 const cover = document.querySelector("#cover");
 const backGround = document.querySelector("#background")
 const bottomText = document.querySelector("#coverBottomText");
-const ui = new Ui(rightArrow,leftArrow,gameName,capturedOn,cover,backGround,bottomText);
+const nextPage = document.querySelector("#nextPage");
+const ui = new Ui(rightArrow,leftArrow,gameName,capturedOn,cover,backGround,bottomText,nextPage);
 const data = new Data();
 
 loadEventListeners();
@@ -29,4 +30,5 @@ function prev(e){
     e.preventDefault();
     ui.changePrev(data);
 }
+
 

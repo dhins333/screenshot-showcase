@@ -1,5 +1,5 @@
 class Ui{
-    constructor(rightArrow,leftArrow,gameName,capturedOn,cover,backGround,bottomText){
+    constructor(rightArrow,leftArrow,gameName,capturedOn,cover,backGround,bottomText,nextPage){
 
         this.gameName = gameName;
         this.rightArrow = rightArrow;
@@ -8,6 +8,7 @@ class Ui{
         this.cover = cover;
         this.backGround = backGround;
         this.bottomText = bottomText;
+        this.nextPage = nextPage;
         this.state = "landing";
         this.game = "w3";
         this.next = "gow";
@@ -44,7 +45,8 @@ class Ui{
     change(){
         this.gameName.textContent = data.landingData[this.game].name;
         this.capturedOn.textContent = data.landingData[this.game].on;
-        this.backGround.style.backgroundImage = `url(../background/${this.game}.jpg)`
+        this.backGround.style.backgroundImage = `url(../background/${this.game}.jpg)`;
         this.cover.style.backgroundImage = `url(../cover/${this.game}.jpg)`;
+        this.nextPage.href = `../${this.game}.html`;
     }
 }
