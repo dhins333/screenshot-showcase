@@ -47,7 +47,7 @@ class Ui{
     change(){
         this.gameName.textContent = data.landingData[this.game].name;
         this.capturedOn.textContent = data.landingData[this.game].on;
-        this.backGround.style.backgroundImage = `url(../background/${this.game}.jpg)`;
+        this.backGround.className = `${this.game}-background`;
         this.cover.style.backgroundImage = `url(../cover/${this.game}.jpg)`;
         this.nextPage.href = `../${this.game}.html`;
     }

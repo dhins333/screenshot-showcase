@@ -106,6 +106,26 @@ a{
     opacity: 0.9;
 }
 
+.w3-background{
+    background-image: url("../background/w3.jpg");
+}
+
+.gow-background{
+    background-image: url("../background/gow.jpg");
+}
+
+.uc4-background{
+    background-image: url("../background/uc4.jpg");
+}
+
+.mgsv-background{
+    background-image: url("../background/mgsv.jpg");
+}
+
+.doom-background{
+    background-image: url("../background/doom.jpg");
+}
+
 #header{
     top: 0;
     font-family: 'Bangers', cursive;
@@ -126,7 +146,6 @@ a{
 
 #background{
     z-index: 1;
-    background-image: url("../background/w3.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
